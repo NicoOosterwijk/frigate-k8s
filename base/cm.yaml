@@ -13,7 +13,7 @@ metadata:
   name: frigate-config
   namespace: frigate
 data:
-  frigate.conf: |
+  config.yaml: |
     mqtt:
       enabled: True
       host: mosquitto-svc.mosquitto.svc.cluster.local
