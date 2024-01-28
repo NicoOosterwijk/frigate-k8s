@@ -10,3 +10,5 @@ spec:
     app: frigate
   ports:
   - port: 5000
+    name: frigate-ui
+    protocol: TCP
