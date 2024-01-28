@@ -14,21 +14,21 @@ metadata:
   namespace: frigate
 data:
   frigate.conf: |
-  mqtt:
-    enabled: True
-    host: mosquitto-svc.mosquitto.svc.cluster.local
-    port: 1883
+    mqtt:
+      enabled: True
+      host: mosquitto-svc.mosquitto.svc.cluster.local
+      port: 1883
 
-  cameras:
-    tuin:
-      ffmpeg:
-        inputs:
-          - path: rtsp://rtsp:12345678@192.168.2.61:554/av_stream/ch0
-            roles:
-              - detect
-              - rtmp
+    cameras:
+      tuin:
+        ffmpeg:
+          inputs:
+            - path: rtsp://rtsp:12345678@192.168.2.61:554/av_stream/ch0
+              roles:
+                - detect
+                - rtmp
 
-      detect:
-        enabled: True
-        width: 1280
-        height: 720
+        detect:
+          enabled: True
+          width: 1280
+          height: 720
