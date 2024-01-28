@@ -35,7 +35,7 @@ spec:
         - mountPath: /config
           name: frigate-config
       volumes:
-      - name: config
+      - name: frigate-config
         configMap:
           name: frigate-config
       - name: data
