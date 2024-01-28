@@ -1,0 +1,7 @@
+resources:
+- cm.yaml
+- pvc.yaml
+- deploy.yaml
+- svc.yaml
+#- ingress.yml
+

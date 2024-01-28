@@ -1,0 +1,11 @@
+defaultNamespace: frigate
+
+NamespaceLabels:
+  app.kubernetes.io/managed-by: Helm
+
+NamespaceAnnotations:
+  meta.helm.sh/release-name: frigate
+  meta.helm.sh/release-namespace: frigate
+
+kustomize:
+  dir: ""
