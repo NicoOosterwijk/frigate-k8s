@@ -33,15 +33,12 @@ spec:
               name: frigate-cm
         volumeMounts:
         - mountPath: /config
-          #subPath: config.conf
-          name: config
-        # - mountPath: /dev/shm
-        #   name: dshm
+          name: frigate-config
       volumes:
       - name: config
+        configMap:
+          name: frigate-config
+      - name: data
         persistentVolumeClaim:
           claimName: frigate-pvc
-      # - name: dshm
-      #   emptyDir:
-      #     medium: Memory
-      #     #sizeLimit: 64Mi
+
