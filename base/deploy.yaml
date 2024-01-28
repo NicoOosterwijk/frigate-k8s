@@ -32,7 +32,8 @@ spec:
           - configMapRef:
               name: frigate-cm
         volumeMounts:
-        - mountPath: /config/config.yml
+        - mountPath: /config
+          #subPath: config.conf
           name: config
         # - mountPath: /dev/shm
         #   name: dshm
