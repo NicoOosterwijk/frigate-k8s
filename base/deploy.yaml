@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app.: frigate
+    app: frigate
   name: frigate
   namespace: frigate
 spec:
